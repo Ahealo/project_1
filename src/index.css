@@ -1,13 +1,27 @@
-body {
+html,
+body{
+  height: 100%;
+  font-family: 'Miscrosoft Yahei';
+  color: #333;
+  background-color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+h5,p {
+  margin: 0 auto
+}
+#root,App{
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.body-fixed {
+  overflow: hidden;
 }

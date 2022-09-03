@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  background-color: #fff;
+}
+.root .btn {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+.root .cancel {
+  flex: 1;
+  border-top: 1px solid #f5f6f5;
+  background-color: #fff;
+  color: #21b97a;
+}
+.root .confirm {
+  flex: 1;
+  background-color: #21b97a;
+  color: #fff;
+}
