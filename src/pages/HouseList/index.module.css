@@ -44,5 +44,6 @@ font-size: 14px;}
 }
 
 .searchHeader :global(.icon-map) {
-  color: #00ae66;
+  color: #00ae66 ;
 }
+

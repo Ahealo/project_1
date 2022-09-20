@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { TabBar } from 'antd-mobile'
-
-import News from '../News/index.js'
-import HouseList from '../HouseList/index.js'
+import { lazy } from 'react'
 import Index from '../Index/index.js'
-import Profile from '../Profile/index.js'
 import './index.scss'
+const News = lazy(() => import('../News/index.js'))
+const HouseList = lazy(() => import('../HouseList/index.js'))
+const Profile = lazy(() => import('../Profile/index.js'))
 
 //TabBar数据
 const tabItems = [
@@ -70,9 +70,11 @@ export default class Home extends React.Component {
       <div className="home">
         {/* 渲染路由组件 */}
         <Route exact path="/home" component={Index} />
+
         <Route path="/home/news" component={News} />
         <Route path="/home/list" component={HouseList} />
         <Route path="/home/profile" component={Profile} />
+
         {/* 底部菜单TabBar页面内容 */}
         <div className="tabBar">
           <TabBar

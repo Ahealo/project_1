@@ -20,7 +20,7 @@ function SearchHeader({ history, cityName }) {
         </div>
       </Flex>
       {/* 右侧地图图标 */}
-      <i className="iconfont icon-map" onClick={() => history.push('/map')} />
+      <i className="iconfont icon-map " onClick={() => history.push('/map')} />
     </Flex>
   )
 }

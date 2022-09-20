@@ -25,3 +25,7 @@ ul{
 .body-fixed {
   overflow: hidden;
 }
+.loading{
+  padding-top: 50%;
+  text-align: center;
+}
